@@ -1,13 +1,27 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.10",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
     "hostRequirements": {
       "cpus": 2
     },
-    "forwardPorts": [8501],
-    "context": "..",
-    "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash",
-      "python.pythonPath": "./venv/bin/python"
-    }
-  }
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "pip install -r requirements.txt",
+    "postCreateCommand": "echo https://${CODESPACE_NAME}-8501.preview.app.github.dev/",
+    "postAttachCommand": {
+      "server": "streamlit run Home.py --server.enableCORS false --server.enableXsrfProtection false"
+    },
+    "customizations": {
+      "codespaces": {
+        "openFiles": [
+          "Home.py"
+        ]
+      },
+      "vscode": {
+        "extensions": [
+          "ms-python.python"
+        ]
+      }
+    },
+    "forwardPorts": [8501]
+}
+  
   
