@@ -1,21 +1,9 @@
-# IDX F
-```
-⬆️ (Replace above with your app's name)
-```
+# IDX Trend
 
-Description of the app ...
 
-## Demo App
+idxtrend is a market trend analysis dashboard.  The objective of this tool is to show market direction for trend and momtentum trading.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://starter-kit.streamlitapp.com/)
+## Let's Go!
 
-## Section Heading
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://idxtrend.streamlitapp.com/)
 
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
