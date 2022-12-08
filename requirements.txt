@@ -1,1 +1,6 @@
 streamlit
+pandas
+yfinance
+base58
+matplotlib
+numpy
