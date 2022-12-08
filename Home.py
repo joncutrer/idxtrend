@@ -6,4 +6,4 @@ with st.sidebar:
 
 st.title('📈 IDX Trend')
 
-st.write('Experimental')
+st.write('Experimental app, no warranty')
