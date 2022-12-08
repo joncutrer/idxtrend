@@ -1,32 +1,13 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.10",
     "hostRequirements": {
       "cpus": 2
     },
-    "waitFor": "onCreateCommand",
-    "updateContentCommand": "pip install -r requirements.txt",
-    "postCreateCommand": "",
-    "postAttachCommand": {
-      "server": "python -m streamlit run Home.py"
+    "forwardPorts": [8501],
+    "context": "..",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "python.pythonPath": "./venv/bin/python"
     },
-    "customizations": {
-      "codespaces": {
-        "openFiles": [
-          "Home.py"
-        ]
-      },
-      "vscode": {
-        "extensions": [
-          "ms-python.python"
-        ]
-      }
-    },
-    "portsAttributes": {
-      "8501": {
-        "label": "Application",
-        "onAutoForward": "openPreview"
-      }
-    },
-    "forwardPorts": [8501]
   }
   
