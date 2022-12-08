@@ -7,7 +7,7 @@
     "updateContentCommand": "pip install -r requirements.txt",
     "postCreateCommand": "",
     "postAttachCommand": {
-      "server": "python streamlit run Home"
+      "server": "python -m streamlit run Home.py"
     },
     "customizations": {
       "codespaces": {
@@ -22,11 +22,11 @@
       }
     },
     "portsAttributes": {
-      "8000": {
+      "8501": {
         "label": "Application",
         "onAutoForward": "openPreview"
       }
     },
-    "forwardPorts": [8000]
+    "forwardPorts": [8501]
   }
   
