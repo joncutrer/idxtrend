@@ -1,4 +1,4 @@
-# 📦 Streamlit App Starter Kit 
+# IDX F
 ```
 ⬆️ (Replace above with your app's name)
 ```
